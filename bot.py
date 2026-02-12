@@ -27,7 +27,7 @@ app = Quart(__name__)
 
 Config = {
     "Bot Name": "Gambler World",  # will be in all embeds
-    "Bot Icon": "https://cdn.discordapp.com/icons/1314565811410829332/a_f59d3588d80ec8f0ab041a65d6c5a761.gif?size=1024",  # will be in all embeds
+    "Bot Icon": "https://cdn.discordapp.com/attachments/1471416221437005917/1471534244458139864/IMG_6745.jpg?ex=698f488f&is=698df70f&hm=866a701e7ebe7e471b07658e03f4c306cfe888b41cc4d2ddecdfc5560242100c&", #will be in all embeds
     "Towers": {  # Config for towers
         "WinChance": 45,  # Percent they will win when they click a tower
         "Multis": [1.42, 2.02, 2.86, 4.05, 5.69]  # Multipliers On The Blocks
@@ -35,13 +35,13 @@ Config = {
     "Mines": {  # Config for mines
         "House": 0.20,  # The Multiplier Will Be Multiplied by 1.00 - This
     },
-    "Logs": 1314565812950007837,  # log channel
-    "Coinflip": {  # Config for coinflip
-        "1v1": "1314565812950007831",  # Channel That Coinflips Be In
+    "Logs":      
+    "Coinflip": {  1471416221437005917, #Config for coinflip
+        "1v1": "  1471535102524653684, # Channel That Coinflips Be In
         "House": 5  # House Edge (%)
     },
     "Rains": {  # Config for rains
-        "Channel": "1314565812950007834",  # Set to the id the channel rains will be in
+        "Channel": 1471535674422460426,  # Set to the id the channel rains will be in
     },
     "Status": {
         "Message": "maintaing balance of user's",
@@ -49,7 +49,7 @@ Config = {
     "AdminCommands": {
         "UserID": ["1177041430502461523", "1216488230245892186", "1278257618758139905", "1144624389556551750", "1124671288527560844", "1085730642928607272", "1310620656865378355"],
         "OwnerID":
-["1177041430502461523"],
+["1454332354326954199"],
     },
     "AutoDeposits": {
         "Webhook": "https://discord.com/api/webhooks/1321614565032853525/QMCu_Mm0bEAgxbnaYEvIM0nnI4jvv7O88uTTn-LFz_ySN3YzTXAMTnFwN85_A",  # auto deposits or /confirmdeposit
@@ -65,7 +65,7 @@ Config = {
     },
     "Promocodes": {
         "Webhook": "https://discord.com/api/webhooks/1321614562520207431/McdDfjVImju1YWovQIDeHma_AbSJrvscE2vn1kUKEPRJGMHT64_yKTTBAbiARt",  # webhook for promocodes
-        "RoleID": "1314565811410829334",  # for ping
+        "RoleID": "1471536319896486159",  # for ping
     },
     "Upgrader": {  # Config for upgrader
         "House": 0.9  # house edge (winnings*house)
