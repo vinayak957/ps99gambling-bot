@@ -26,14 +26,14 @@ from blockcypher import subscribe_to_address_webhook
 app = Quart(__name__)
 
 Config = {
-    "Bot Name": "name here",  # will be in all embeds
+    "Bot Name": "Gambler World",  # will be in all embeds
     "Bot Icon": "https://cdn.discordapp.com/icons/1314565811410829332/a_f59d3588d80ec8f0ab041a65d6c5a761.gif?size=1024",  # will be in all embeds
     "Towers": {  # Config for towers
         "WinChance": 45,  # Percent they will win when they click a tower
         "Multis": [1.42, 2.02, 2.86, 4.05, 5.69]  # Multipliers On The Blocks
     },
     "Mines": {  # Config for mines
-        "House": 0.25,  # The Multiplier Will Be Multiplied by 1.00 - This
+        "House": 0.20,  # The Multiplier Will Be Multiplied by 1.00 - This
     },
     "Logs": 1314565812950007837,  # log channel
     "Coinflip": {  # Config for coinflip
@@ -44,7 +44,7 @@ Config = {
         "Channel": "1314565812950007834",  # Set to the id the channel rains will be in
     },
     "Status": {
-        "Message": "Offline",
+        "Message": "maintaing balance of user's",
     },
     "AdminCommands": {
         "UserID": ["1177041430502461523", "1216488230245892186", "1278257618758139905", "1144624389556551750", "1124671288527560844", "1085730642928607272", "1310620656865378355"],
@@ -71,7 +71,7 @@ Config = {
         "House": 0.9  # house edge (winnings*house)
     },
     "Rakeback": 1,  # Rakeback %
-    "Username": "nothing here.",  # The Username Of The Account Running The Bot
+    "Username": "GamblerWorldManager",  # The Username Of The Account Running The Bot
     "DiscordBotToken": "",  # The token of the discord bot
     "AddGemsWebhook": "https://discord.com/api/webhooks/1321614561866154086/MLXaXAqgT0R030D-",
     "SetGemsWebhook": "https://discord.com/api/webhooks/1321614561866154086/MLXaXAqgT0R030D-"# New private channel webhook for /addgems
@@ -598,7 +598,7 @@ class DepositSelectionView(discord.ui.View):
                 f":ballot_box_with_check: **Selection:** {selection}\n\n"
                 f"**Please wait for someone to assist you, if you wish to close your deposit request use /close command**"),
         )
-        embed.set_footer(text="Gambling Paradise")
+        embed.set_footer(text="Gambler World")
         await new_channel.send(
             content=f"<@&1314565811452645432>, {self.interaction.user.mention}",  # replace those numbers with the role id you want :) 
             embed=embed,
@@ -631,7 +631,7 @@ async def close(interaction: discord.Interaction):
     user = interaction.user
 
     
-    special_role_name = "💎 Deposit/Withdraw Team" # put mame of the role here
+    special_role_name = "Deposit/Withdraw Team" # put mame of the role here
 
     
     special_role = discord.utils.get(guild.roles, name=special_role_name)
